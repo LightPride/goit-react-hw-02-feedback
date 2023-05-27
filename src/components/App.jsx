@@ -13,9 +13,11 @@ class App extends Component {
   leaveFeedback = e => {
     this.setState({ [e]: this.state[e] + 1 });
   };
-  countTotalStatistics = (good, neutral, bad) => good + neutral + bad;
-  countPositiveStatistics = good => {
-    Math.round((good * 100) / this.countTotalStatistics(this.state));
+  countTotalStatistics = ({ good, neutral, bad }) => {
+    return good + neutral + bad;
+  };
+  countPositiveStatistics = ({ good, neutral, bad }) => {
+    return Math.round((good * 100) / this.countTotalStatistics(this.state));
   };
 
   render() {
