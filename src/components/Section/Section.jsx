@@ -11,3 +11,7 @@ export const Section = ({ title, children }) => {
     </SectionContainer>
   );
 };
+
+Section.propTypes = {
+  title: PropTypes.string,
+};

@@ -16,3 +16,8 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     );
   });
 };
+
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: PropTypes.func,
+  option: PropTypes.array,
+};
