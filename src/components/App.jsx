@@ -36,7 +36,7 @@ class App extends Component {
           />
         </Section>
 
-        <Section title="Statistics ">
+        <Section title="Statistics">
           {this.countTotalStatistics() > 0 ? (
             <Statistics
               good={good}
